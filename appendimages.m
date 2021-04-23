@@ -16,4 +16,4 @@ else
 end
 
 % Now append both images side-by-side.
-im = [image1 image2];   
+im = [image1 repmat(255,[size(image1,1),10]) image2];   
